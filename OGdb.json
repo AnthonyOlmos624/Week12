@@ -1,0 +1,19 @@
+{
+    "games": [
+      {
+        "id": "1",
+        "title": "The Legend of Zelda",
+        "genre": "Action-Adventure"
+      },
+      {
+        "id": "2",
+        "title": "Super Mario World",
+        "genre": "Platformer"
+      },
+      {
+        "id": "3",
+        "title": "Call of Duty",
+        "genre": "Shooter"
+      }
+    ]
+  }

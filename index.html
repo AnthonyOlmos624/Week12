@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Games CRUD</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 2rem; }
+        .game { margin-bottom: 1rem; }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+      
+        <h1 class="mb-4">Video Game CRUD App</h1>
+     <div>
+          <!-- Need a form for adding a new video game-->
+          <form id="gameForm">
+            <div class="mb-3">
+                <label for="title" class="form-label">Game Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter game title" required>
+            </div>
+            <div class="mb-3">
+                <label for="genre" class="form-label">Genre</label>
+                <input type="text" class="form-control" id="genre" placeholder="Enter game genre" required> 
+            </div>
+            <button type="submit" class="btn btn-primary">Add Game</button>
+         </form>
+     </div>
+
+         <!--Need a section to display the list of games-->
+
+         <h2 class="mt-5">Game List</h2>
+         <ul id="gameList" class="list-group"></ul>
+    </div>
+
+    <!--Add in my Javascript File-->
+    <script src="app.js"></script>
+</body>
+</html>
