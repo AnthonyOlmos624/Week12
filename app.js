@@ -27,8 +27,7 @@ function displayGames(games){
         `; 
         gameList.appendChild(li); 
     })
-}
-// Having issues in this location when a game is added the id would add letters and numbers to it which will not let me delete the game due to the id not being in numerical order i am assuming. Couldnt find a way to fix this issue. =(   
+}   
 //Create a function to add new game via POST
 async function addGame(game){
     try{
