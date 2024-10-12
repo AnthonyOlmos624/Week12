@@ -23,7 +23,7 @@ function displayGames(games){
         li.className = 'list-group-item game';
         li.innerHTML = `
         <strong>${game.title}</strong> - ${game.genre}
-        <button class="btn btn-danger btn-sm float-end" onclick="deleteGame(${game.id})">Delete</button>
+        <button class="btn btn-danger btn-sm float-end" onclick="deleteGame('${game.id}')">Delete</button>
         `; 
         gameList.appendChild(li); 
     })
@@ -39,6 +39,9 @@ async function addGame(game){
             },
             body: JSON.stringify(game)
         });
+        if (!response.ok){
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const newGame = await response.json();
         fetchGames(); //need this to refresh the game list after adding new game
     } catch(error){
