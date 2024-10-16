@@ -1,19 +1,22 @@
 {
   "games": [
     {
-      "id": "1",
+      "Number": "1",
       "title": "The Legend of Zelda",
-      "genre": "Action-Adventure"
+      "genre": "Action-Adventure",
+      "id": "4bab"
     },
     {
-      "id": "2",
+      "Number": "2",
       "title": "Super Mario World",
-      "genre": "Platformer"
+      "genre": "Platformer",
+      "id": "cfad"
     },
     {
-      "id": "3",
+      "Number": "3",
       "title": "Call of Duty",
-      "genre": "Shooter"
+      "genre": "Shooter",
+      "id": "708c"
     }
   ]
 }
